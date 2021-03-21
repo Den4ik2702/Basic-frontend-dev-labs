@@ -1,0 +1,40 @@
+.blue{
+    position: absolute;
+width: 35px;
+height: 368px;
+left: 0px;
+top: 1px;
+margin-top: 79px;
+background: #2998E2;
+}
+
+.posters {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 35px;
+    margin-right: -11px;
+    }
+ .posters li {
+    width: 252px;
+    height: 368px;
+    margin: 0 0px 0 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 80px;
+    }
+.hover{
+    position: absolute;
+width: 253px;
+height: 368px;
+left: 803px;
+top: 80px;
+}
+
+.next{
+    position: absolute;
+width: 36px;
+height: 368px;
+left: 1264px;
+top: 80px;
+}
