@@ -1,0 +1,81 @@
+body{
+    background: linear-gradient(0deg, #5F7AD3, #5F7AD3);
+    }
+
+.white{
+    position: absolute;
+    width: 1300px;
+    height: 2202px;
+    margin-top:93px;
+    background: #FFFFFF;
+    margin-left: 150px;
+    margin-right: 150px;
+    }
+    
+.header{
+    position: absolute;
+    width: 1251px;
+    height: 80px;
+    left: 20px;
+    top: 0px;
+}
+
+.search{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1145px;
+    top: 23px;
+}
+
+.menu{
+    position: absolute;
+    width: 552px;
+    height: 80px;
+    left: 327px;
+    top: 0px;
+}
+
+.logo{
+    position: absolute;
+    width: 115px;
+    height: 59px;
+    left: 0px;
+    top: 13px;
+}
+
+.text8{
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    margin-left: 1241px;
+    margin-top: 14px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.oval4{
+    position: absolute;
+width: 20px;
+height: 18px;
+left: 1233px;
+top: 13px;
+}
+
+.oval{
+    position: absolute;
+width: 42px;
+height: 42px;
+left: 1203px;
+top: 19px;
+}
