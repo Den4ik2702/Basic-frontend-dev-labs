@@ -1,0 +1,26 @@
+.trailer{
+    position: absolute;
+width: 34px;
+height: 410px;
+left: 0px;
+top: 0px;
+}
+
+.info{
+    position: absolute;
+width: 540px;
+height: 409px;
+margin-top: 684px;
+margin-left: 159px;
+}
+
+
+.JBtrailer{
+    position: absolute;
+width: 7px;
+height: 409px;
+left: 0px;
+top: 0px;
+margin-top: 684px;
+margin-left: 159px;
+}
