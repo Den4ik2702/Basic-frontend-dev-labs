@@ -7,6 +7,13 @@ top: 1px;
 margin-top: 79px;
 background: #2998E2;
 }
+.unit1{
+    position: absolute;
+width: 1331px;
+height: 370px;
+right: -31px;
+margin-top: 0px;
+}
 
 .posters {
     margin: 0;

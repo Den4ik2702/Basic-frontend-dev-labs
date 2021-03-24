@@ -1,9 +1,9 @@
 .news{
     position: absolute;
-    width: 414px;
-    height: 381px;
-    left: 15px;
-    margin-top: 410px;
+width: 414px;
+height: 381px;
+left: 15px;
+margin-top: 891px;
 }
 
 .born{
@@ -11,7 +11,7 @@
     width: 413px;
     height: 181px;
     right: 443px;
-    margin-top: 410px;
+    margin-top: 891px;
 }
 
 .netflix{
@@ -19,7 +19,7 @@
     width: 414px;
     height: 182px;
     right: 441px;
-    margin-top: 581px;
+    margin-top: 1064px;
 }
 
 .wall{
@@ -27,5 +27,5 @@
     width: 407px;
     height: 379px;
     right: 15px;
-    margin-top: 390px;
+    margin-top: 872px;
 }
