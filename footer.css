@@ -1,0 +1,40 @@
+.footer{
+    position: absolute;
+width: 1274px;
+height: 257px;
+right: 11px;
+bottom: 11px;
+}
+
+.evrw{
+    position: absolute;
+width: 391px;
+height: 197px;
+left: 0px;
+top: 10px;
+}
+
+.follow{
+    position: absolute;
+width: 202px;
+height: 164px;
+left: 422px;
+top: 7px;
+}
+
+.flickr{
+    position: absolute;
+width: 202px;
+height: 167px;
+left: 650px;
+top: 10px;
+}
+
+.amazon{
+    position: absolute;
+width: 1268px;
+height: 23px;
+left: 1px;
+top: 234px;
+
+}
