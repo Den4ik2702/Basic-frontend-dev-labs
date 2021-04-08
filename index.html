@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIte</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"
+    />
+    <style>
+.nachalo  {
+    background-color: RGB(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+    .nachalo {
+    background: url('pictures/logo_pic.svg');
+  }
+}
+
+.logoped  {
+    background-color: RGB(37, 43, 66);
+}
+
+@media (min-width: 768px) {
+    .logoped {
+        background: url('pictures/footer_pic.svg'); 
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header class="flex mx-auto container  justify-between">
+        <img class="self-center" src="./pictures/logo.svg" >
+        <div class="block lg:hidden pr-4 m-12 self-center ">
+				  <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none">
+					  <svg class="fill-current h-3 w-3" >
+						  <title>Menu</title>
+						  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					  </svg>
+				  </button>
+        </div>
+        
+        <div class=" lg:flex items-center hidden" id="">
+          <ul class="lg:flex  items-center ">
+            <li class="mr-3">
+            <p class="text-red-300  ">Home</p> 
+            </li>
+            <li class="mr-3">
+              <p >Product</p>
+            </li>
+            <li class="mr-3">
+              <p >Faq</p>
+            </li>
+            <li class="mr-3">
+              <p>Contact</p>
+            </li>
+          </ul>
+        </div>
+    </header>
+    <main>
+   
+        <div  class=" mx-auto container nachalo mb-8">
+          <section class="px-16">
+            <p class = "text-center lg:text-white  text-2xl mb-8" >Food app</p>  
+            <p class = "text-center lg:text-white text-5xl" >Why stay hungry when you can order form Bella Onojie</p>
+            <p class = "text-center lg:text-white text-2xl" >Download the bella onoje's food app now on</p>
+            <section class="text-center px-3 lg:px-0">
+              <button class=" mt-4 mb-16 bg-red-300  text-white rounded-full py-3 px-20" onclick="buton()"> Playstore</button>
+              <button class=" mt-4 border-2 border-red-300 lg:border-white lg:text-white text-red-300 rounded-full py-3 px-20" onclick="buton()"> App store</button>
+            </section>
+          </section>
+        </div>
+
+        <section class=" md:mr-12">
+            <img class="mx-auto" src="./pictures/light3.svg">
+            <hr>
+        </section>
+          <p class = "text-center  lg:text-5xl text-2xl" >How the app works</p>
+ 
+        <div class="container mx-auto ">
+          <div class="md:grid grid-cols-12">
+            <section class="col-span-5"> 
+              <img class="place-items-center lg:flex lg:items-center hidden" src="./pictures/light4.svg">
+            </section>
+            <div class="col-span-4 self-center">
+              <p class = "mx-auto text-red-400 text-red-300 text-2xl text-left" >Create an account</p>
+              <p class = "mx-auto text-4xl text-left" >Create/login to an existing account to get started</p>
+              <p class = "mx-auto text-2xl text-left" >An account is created with your email and a desired password</p>
+              </div>
+              <section class="col-span-5"> 
+                <img class="place-items-center lg:hidden text-center" src="./pictures/light4.svg">
+              </section>
+          </div>
+        </div>
+
+        <div class="container mx-auto">
+            <div class="md:grid grid-cols-12">
+              <div class="col-span-6 self-center">
+                <p class = "mx-auto text-red-400  text-red-300 text-2xl text-left" >Explore varieties</p>
+                <p class = "mx-auto text-4xl text-left" >Sop for your favorites meals as e dey hot.</p>
+                <p class = "mx-auto text-2xl text-left" >Shop for your favorite meals or drinks and enjoy while doing it.</p>    
+              </div>
+              
+              <section class="col-span-5 self-center"> 
+                <img class="place-items-center" src="./pictures/light5.svg">
+              </section>
+            </div>
+          </div>
+     
+        <div class="container mx-auto">
+          <div class="md:grid grid-cols-12">
+            <section class="col-span-5"> 
+              <img class="place-items-center lg:flex lg:items-center lg:w-auto hidden" src="./pictures/light6.svg">
+            </section>
+            <div class="col-span-4 self-center">
+              <p class = "mx-auto text-red-400 text-red-300 text-2xl text-left" >Checkout</p>
+              <p class = "mx-auto text-4xl text-left" >When you done check out and get it delivered.</p>
+              <p class = "mx-auto text-2xl text-left" >When you done check out and get it delivered with esase.</p>
+              </div>
+              <section class="col-span-5"> 
+                <img class="place-items-center lg:hidden text-center" src="./pictures/light6.svg">
+              </section>
+          </div>
+        </div>
+
+          <div class="mx-auto container logoped mb-8 " >
+            <section class="mx-auto container">
+              <p class = "text-center text-4xl text-white mb-8 " >Download the app now on</p>
+              <p class = "text-center text-2xl text-white mb-8 " >Available on your favorite store. Start your premium experience now</p>
+           </section>
+           <div class="text-center mb-16">
+            <button class="mt-8  bg-red-300  text-white rounded-lg py-3 px-8 " onclick="buton()"> Playstore</button>
+            <button class="mt-8  mb-8 text-white rounded-lg py-3 px-16 border-2" onclick="buton()"> App store</button>
+          </div>
+          </div>
+    
+    </main>
+    <footer class = "m-4" >
+        <section class="flex mx-auto container justify-between ">
+            <img class="lg:flex lg:items-center hidden" src="./pictures/logo.svg">
+            <img class="mx-auto self-center" src="./pictures/social.svg">
+            <p class = "  lg:flex lg:items-center hidden" >Copyright 2020 Bella Onojie.com</p> 
+        </section>
+        <p class = " lg:hidden text-center" >Copyright 2020 Bella Onojie.com</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  var key = new Boolean(false)
+var names;
+
+
+function buton() {
+if(key==true){
+Swal.fire('Я это сделал, а ' + names + ' тебе от меня совет: “ Поступай правильно — поступай в ВятГУ!”')
+}
+else{
+Swal.fire({
+title: 'Введите имя',
+input: 'text', inputAttributes: {
+autocapitalize: 'off'
+},
+showCancelButton: true,
+cancelButtonText: 'Отмена',
+confirmButtonText: 'Ввести',
+allowOutsideClick: () => !Swal.isLoading()
+}).then((result) => {
+if (result.isConfirmed) {
+Swal.fire('Я это сделал, а ' + result.value + ' тебе от меня совет: “ Поступай правильно — поступай в ВятГУ!”')
+names=result.value;
+}
+})
+key=true;
+}
+}
+</script>
