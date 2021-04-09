@@ -1,8 +1,22 @@
 <html>
     <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="preload.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="/script.js"></script>
     </head>
     <body>
+        <div class="preloader">
+            <div class="preloader__row">
+                <p class="text-4xl text-center">Загрузка страницы …</p>
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+        </div>
         <header class="flex flex-row justify-evenly mt-12">
             <img class="ml-40" src="./pictures/Logo.svg">
             <p class="text-xl ml-40 mt-3">About</p>
@@ -11,13 +25,17 @@
             <p class="text-xl ml-10 mt-3">Testimonials</p>
             <p class="text-xl ml-10 mt-3">Help</p>
             <p class="text-2xl font-bold ml-40 mt-3">Sign In</p>
-            <img class="ml-7 mt-1.5" src="./pictures/signup.svg">
+            <button onclick="knopka()" class="content-center mt-2 px-10 text-red-500 border-red-400 py-2 rounded-3xl border-2 bg-white focus:outline-none">
+                <span class=>Sign up</span>
+            </button>
         </header>
         <div class="flex flex-row justify-evenly">
             <div class="mt-40">
                 <p class="lg:text-7xl font-medium">Want anything to be<br>easy with <a class="lg:text-7xl font-bold">LaslesVPN.</a></p>
                 <p class="lg:text-xl mt-5 ml-1">Provide a network for all your needs with ease and fun using <a class="lg:text-xl font-bold">LaslesVPN</a><br>discover interesting features from us.</p>
-                <img class="-ml-8 mt-8" src="./pictures/getStarted.svg">
+                <button onclick="knopka()" class="content-center mt-12 px-24 text-white border-red-500 py-4 rounded-lg border-2 bg-red-500 focus:outline-none">
+                    <span class="font-bold text-xl">Get started</span>
+                </button>
             </div>
             <div>
                 <img class="ml-40 mt-40" src="./pictures/Illustration 1.svg">
@@ -66,21 +84,27 @@
                 <p class="text-center text-2xl font-bold mt-8">Free plan</p>
                 <img class="mx-auto w-56 mt-8" src="./pictures/freeOp.svg">
                 <p class="text-4xl text-center font-bold mt-44">Free</p>
-                <img class="mx-auto mt-5 w-52" src="./pictures/select.svg">
+                <button onclick="knopka()" class="content-center mt-8 ml-4 mb-8 px-16 py-4 text-red-500 border-red-400 rounded-3xl border-4 bg-white focus:outline-none">
+                    <span class="font-bold text-xl">Select</span>
+                </button>
             </div>
             <div class="bg-white border-4 rounded-2xl px-16">
                 <img class="mx-auto mt-20" src="./pictures/Standard.svg">
                 <p class="text-center text-2xl font-bold mt-8">Standart plan</p>
                 <img class="mx-auto w-56 mt-8" src="./pictures/standOp.svg">
                 <p class="text-4xl text-center mt-32"><a class="font-bold">$9</a> / mo</p>
-                <img class="mx-auto mt-5 w-52" src="./pictures/select.svg">
+                <button onclick="knopka()" class="content-center mt-8 ml-4 mb-8 px-16 py-4 text-red-500 border-red-400 rounded-3xl border-4 bg-white focus:outline-none">
+                    <span class="font-bold text-xl">Select</span>
+                </button>
             </div>
             <div class="bg-white border-4 rounded-2xl px-16 border-red-400">
                 <img class="mx-auto mt-20" src="./pictures/Premium.svg">
                 <p class="text-center text-2xl font-bold mt-8">Premium plan</p>
                 <img class="mx-auto w-56 mt-8" src="./pictures/premiumOp.svg">
                 <p class="text-4xl text-center pt-20"><a class="font-bold">$12</a> / mo</p>
-                <img class="mx-auto w-64" src="./pictures/selectAct.svg">
+                <button onclick="knopka()" class="content-center mt-8 ml-4 mb-8 px-16 py-4 text-white border-red-400 rounded-3xl border-2 bg-red-500 focus:outline-none">
+                    <span class="font-bold text-xl">Select</span>
+                </button>
             </div>
         </div>
         <p class="text-4xl text-center font-bold mt-36">Huge Global Network<br>of Fast VPN</p>
@@ -88,7 +112,36 @@
         <img class="mt-40 mx-auto" src="./pictures/Huge Global.svg">
         <img class="mt-9 mx-auto" src="./pictures/Sponsored.svg">
         <img class="mt-12 mx-auto" src="./pictures/Otz.svg">
-        <img class="mt-12 mx-auto" src="./pictures/Sub.svg">
-
+        <div class="mt-12 flex flex-row mx-auto justify-evenly">
+            <img class="ml-20" src="./pictures/SubText.svg">
+            <button onclick="knopka()" class="content-center mt-8 ml-4 mb-8 px-16 py-4 text-white border-red-400 rounded-3xl border-2 bg-red-500 focus:outline-none">
+                <span class="font-bold text-xl">Subscribe Now</span>
+            </button>
+        </div>
+        <footer class ="flex flex-row mt-20 justify-evenly">
+            <div class="w-96">
+                <img class="" src="./pictures/Logo.svg">
+                <p class="text-xl mt-5"><a class="font-bold">LaslesVPN</a> is a private virtual network that has unique features and has high security.</p>
+                <div class="flex flex-row">
+                    <img class="-ml-9 mt-7 w-28" src="./pictures/Facebook.svg">
+                    <img class="ml-2 mt-7 w-28" src="./pictures/Twitter.svg">
+                    <img class="ml-2 mt-7 w-28" src="./pictures/Instagram.svg">
+                </div>
+                <p class="mt-0.5 text-xl">©2020LaslesVPN</p>
+            </div>
+            <div class="flex flex-row">
+                <img class="" src="./pictures/Prod.svg">
+                <img class="ml-48 -mt-2" src="./pictures/Eng.svg">
+                <img class="ml-40 -mt-40" src="./pictures/Earn.svg">
+            </div>
+        </footer>
+        <script>
+            window.onload = function () {
+              document.body.classList.add('loaded_hiding');
+              window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');}, 543);
+            }
+        </script>
     </body>
 </html>
